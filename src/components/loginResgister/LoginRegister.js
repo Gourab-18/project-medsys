@@ -27,6 +27,7 @@ const LoginRegister = () => {
       <div className="overlay-container">
         <div className="overlay">
           <div className="overlay-panel overlay-left">
+            <h4>Already created an account ?</h4>
             <button
               className="ghost"
               id="signIn"
@@ -36,6 +37,7 @@ const LoginRegister = () => {
             </button>
           </div>
           <div className="overlay-panel overlay-right">
+            <h4>Donot have an account ?</h4>
             <button
               className="ghost"
               id="signUp"
