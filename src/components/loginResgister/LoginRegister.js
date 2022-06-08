@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./LoginRegister.css";
+
 const LoginRegister = () => {
   const [addclass, setaddclass] = useState("");
   return (
@@ -7,17 +8,18 @@ const LoginRegister = () => {
       <div className="form-container  sign-up-container">
         <form>
           <h1>Create Account</h1>
-          <input type="text" placeholder="NAME" />
-          <input type="email" placeholder="EMAIL" />
-          <input type="password" placeholder="PASSWORD" />
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
           <button type="submit">REGISTER</button>
         </form>
       </div>
       <div className="form-container sign-in-container">
         <form>
           <h1>Login</h1>
-          <input type="email" placeholder="EMAIL" />
-          <input type="password" placeholder="PASSWORD" />
+          <input type="number" placeholder="Phone Number" />
+          <button type="submit">Get OTP</button>
+          <input type="number" placeholder="Enter OTP" />
           <button type="submit">LOGIN</button>
         </form>
       </div>
