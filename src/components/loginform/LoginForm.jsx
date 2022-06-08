@@ -44,7 +44,7 @@ const LoginForm = ({ setAuth }) => {
 
   const formik = useFormik({
     initialValues: {
-      email: "",
+      phoneNo: "",
       password: "",
       remember: true,
     },
