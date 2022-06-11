@@ -1,0 +1,28 @@
+.profile_data {
+    background: wheat;
+    border-radius: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.profile__me-image {
+    width: 250px;
+    height: 250px;
+}
+.profile__me-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.user__data {
+    font-size: larger;
+    width: 250px;
+    margin-left: 10%;
+    line-height: 2;
+}
