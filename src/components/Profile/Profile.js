@@ -4,6 +4,7 @@ import { FaUserCircle } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import { FaMailBulk } from "react-icons/fa";
 
+
 const profile = () => {
   return (
       <div className="max-w-[600px] w-3/4 mx-auto bg-yellow-500 rounded-2xl grid grid-cols-1 sm:grid-cols-2  mt-24">
