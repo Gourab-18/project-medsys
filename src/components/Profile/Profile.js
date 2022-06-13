@@ -7,8 +7,8 @@ import { FaMailBulk } from "react-icons/fa";
 
 const profile = () => {
   return (
-      <div className="max-w-[500px] w-3/4 mx-auto bg-zinc-300 rounded-md grid grid-cols-1 sm:grid-cols-2  mt-24">
-          <div className="flex flex-col justify-center mx-auto rounded-md w-5/6">
+      <div className="w-full sm:w-2/3 mx-auto my-auto  bg-zinc-300 rounded-md grid grid-cols-1 sm:grid-cols-2">
+          <div className="flex flex-col justify-center mx-auto rounded-md w-3/4 sm:w-3/5">
           <div className="flex items-center mx-auto justify-center w-5/6">
             <img className="rounded-md " src={ME} alt="Profile Image" />
           </div>
@@ -21,7 +21,7 @@ const profile = () => {
 
           <div className="flex flex-row  ml-4">
             <FaPhone className="text-3xl font-semibold text-white text-center ml-1 mb-3" />
-            <small className="text-gray-100 text-lg ml-3">+91 999999999</small>
+            <small className="text-gray-100 text-lg sm:text-sm ml-3">+91 999999999</small>
           </div>
 
           <div className="flex flex-row  ml-4">
