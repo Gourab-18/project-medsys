@@ -29,7 +29,7 @@ const profile = () => {
             <small className="text-gray-100 text-lg ml-3">Email</small>
           </div>
           <div>
-            <button className='w-1/2 my-5 py-2 bg-yellow-400 text-gray-800 font-semibold rounded-md ml-5'>Edit profile</button>
+            <button className='w-3/4 my-5 py-2 bg-yellow-400 text-gray-800 font-semibold rounded-md ml-5'>Edit profile</button>
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ const SideBar = () => {
     <div className="flex">
       <div
         className={` ${
-          open ? "w-72" : "w-20 "
+          open ? "w-72 " : "w-24"
         } bg-zinc-800 h-screen p-5  pt-8 relative duration-300`}
       >
         <img
@@ -32,7 +32,7 @@ const SideBar = () => {
            border-2 rounded-full  ${!open && "rotate-180"}`}
           onClick={() => setOpen(!open)}
         />
-        <div className="flex gap-x-4 items-center w-11">
+        <div className="items-center w-5/6 ">
           <img
             src={logo}
             className={`cursor-pointer duration-500 ${
@@ -65,7 +65,10 @@ const SideBar = () => {
         </ul>
       </div>
       <div className="h-screen flex-1 p-7">
-        <Profile/>
+        <
+          Profile
+
+          />
       </div>
     </div>
   )
