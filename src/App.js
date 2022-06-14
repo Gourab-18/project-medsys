@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginRegister from "./components/loginResgister/LoginRegister";
 import EditProfile from "./components/editProfile/EditProfile";
 import Dashboard from "./components/Dashboard/Dashboard";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard/>}/>
         <Route path="/profile/EditProfile" element={<EditProfile/>}/>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
