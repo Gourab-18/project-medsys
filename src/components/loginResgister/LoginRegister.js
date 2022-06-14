@@ -3,7 +3,7 @@ import image from '../../assets/dp.png'
 
 export default function LoginRegister() {
   return (
-    <div className='bg-zinc-400 grid grid-cols-1 sm:grid-cols-2 h-screen w-full'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 h-screen w-full'>
         <div className='lg:w-2/3 flex flex-col space-y-4 justify-center lg:ml-auto' >
         <h2 className='text-4xl font-semibold text-gray-800 text-center text ml-auto mr-auto'>Sign in here </h2>
           <form className='max-w-[350px] w-3/4 mx-auto bg-gray-100 p-6 px-6 rounded-md'>

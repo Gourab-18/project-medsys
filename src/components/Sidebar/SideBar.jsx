@@ -2,7 +2,9 @@ import { useState } from "react";
 import control from '../../assets/control.png';
 import logo from '../../assets/logo.png';
 import Setting from '../../assets/Setting.png';
-import Profile from "../Profile/Profile";
+import Profile from "../../pages/Profile";
+import CompletedWork from "../../pages/CompletedWork"
+import PendingWork from "../../pages/PendingWork"
 
 // import {FcSettings} from "react-icons/fc"
 
@@ -14,10 +16,7 @@ const SideBar = () => {
     { title: "Documents", src: "Chat" },
     { title: "Pending work", src: "User", gap: true },
     { title: "Completed work", src: "Calendar" },
-    { title: "Search", src: "Search" },
-    { title: "Analytics", src: "Chart" },
-    { title: "Files ", src: "Folder", gap: true },
-    { title: "Setting", src: "Setting" },
+    { title: "Log Out", src: "Setting" },
   ];
   return (
     <div className="flex">
@@ -65,7 +64,7 @@ const SideBar = () => {
       </div>
       <div className="h-screen flex-1 p-7">
         <
-          Profile
+              Profile
 
           />
       </div>

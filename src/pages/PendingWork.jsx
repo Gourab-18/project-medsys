@@ -2,30 +2,19 @@ import React from 'react'
 
 function PendingWork() {
   return (
-    <div className="bg-gray-200 flex flex-col space-y-4  ">
-      <h2 className="text-5xl font-semibold text-gray-800 text-center p-3">
-        Pending Work{" "}
+    <div className=" flex flex-col ">
+      <h2 className="text-4xl sm:text-5xl font-semibold text-zinc-800 text-center py-5">
+        Pending Work
       </h2>
-      <form className="max-w-[900px] w-3/4 mx-auto bg-gray-100 p-5 px-8 rounded-lg">
-        
-        
-
-        <div className="flex flex-col text-gray-600 py-5">
-          <label className="py-3">Details regarding Pending Work</label>
-            {/* <input type="text" placeholder="Placeholder" class="px-3 py-4 placeholder-slate-300 text-slate-600 relative bg-white bg-white rounded text-base border-0 shadow outline-none focus:outline-none focus:ring w-full pr-10"/>
-                <span class="z-10 h-full leading-snug font-normal absolute text-center text-slate-300 absolute bg-transparent rounded text-lg items-center justify-center w-8 right-0 pr-3 py-4">
-                    <i class="fas fa-user"></i>
-                </span> */}
-
-            <textarea rows="15" className="border p-2 rounded w-full" placeholder="Enter details..."></textarea>
+      <form className="w-full sm:w-2/3 mx-auto bg-gray-100 p-4 px-5 rounded-lg">
+        <div className="flex flex-col text-zinc-800 py-2">
+          <label className="py-1 font-medium">Details regarding Completed Work</label>
+            <textarea rows="11" className="border p-1 rounded-sm w-full" placeholder="Enter details..."></textarea>
         </div>
-
-        <div className="flex flex-col text-gray-600 py-5">
-          <label className="py-3">Remarks</label>
-
-            <textarea rows="7" className="border p-2 rounded w-full" ></textarea>
+        <div className="flex flex-col text-gray-800 py-4">
+          <label className="py-1 font-medium">Remarks</label>
+            <textarea rows="7" className="border p-1 rounded-sm w-full" ></textarea>
         </div>
-
       </form>
     </div>
   )
