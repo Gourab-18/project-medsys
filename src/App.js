@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginRegister from "./components/loginResgister/LoginRegister";
-import SideBar from "./components/Sidebar/SideBar";
 import EditProfile from "./components/editProfile/EditProfile";
+import Dashboard from "./components/Dashboard/Dashboard";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LoginRegister />}/>
-        <Route path="/profile" element={<SideBar />}/>
+        <Route path="/dashboard" element={<Dashboard/>}/>
         <Route path="/profile/EditProfile" element={<EditProfile/>}/>
       </Routes>
     </BrowserRouter>

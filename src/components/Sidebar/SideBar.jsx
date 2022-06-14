@@ -19,7 +19,6 @@ const SideBar = () => {
     { title: "Log Out", src: "Setting" },
   ];
   return (
-    <div className="flex">
       <div
         className={` ${
           open ? "w-1/3 sm:w-72 " : "w-10 sm:w-24"
@@ -62,13 +61,6 @@ const SideBar = () => {
           ))}
         </ul>
       </div>
-      <div className="h-screen flex-1 p-7">
-        <
-              Profile
-
-          />
-      </div>
-    </div>
   )
 }
 
