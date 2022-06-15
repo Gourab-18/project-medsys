@@ -2,9 +2,8 @@ import React from "react";
 import ME from "../assets/dp.png";
 import { CgProfile } from "react-icons/cg"
 import { FiMail, FiPhone } from "react-icons/fi"
-import { HiOutlineOfficeBuilding } from "react-icons/hi"
-import { FaRegAddressBook } from "react-icons/fa"
-import { MdHttp } from "react-icons/md"
+import { TbBuilding,TbAddressBook } from "react-icons/tb"
+import { CgWebsite } from "react-icons/cg"
 
 
 const profile = () => {
@@ -23,11 +22,11 @@ const profile = () => {
         </div>
         <div className="bg-zinc-700 flex flex-col justify-center rounded-md py-7 px-5">
           <div className="flex flex-row">
-            <CgProfile className="text-3xl font-semibold text-white text-center my-auto" />
-            <small className=" text-white text-lg sm:text-xl ml-4">FirstName LastName</small>
+            <CgProfile className="text-4xl font-semibold text-white text-center my-auto" />
+            <small className=" text-white text-xl sm:text-2xl ml-2">FirstName LastName</small>
           </div>
 
-          <div className="flex flex-row mt-4">
+          <div className="flex flex-row mt-6">
             <FiPhone className="text-3xl font-semibold text-white text-center my-auto" />
             <small className="text-gray-100 text-lg sm:text-xl ml-4">+91 999999999</small>
           </div>
@@ -37,17 +36,17 @@ const profile = () => {
             <small className="text-gray-100 text-lg sm:text-xl ml-4">userName@gmail.com</small>
           </div>
           <div className="flex flex-row mt-4">
-            <HiOutlineOfficeBuilding className="text-3xl font-semibold text-white text-center my-auto" />
+            <TbBuilding className="text-3xl font-semibold text-white text-center my-auto" />
             <small className="text-gray-100 text-lg sm:text-xl ml-4">Company Name</small>
           </div>
           <div className="flex flex-row mt-4">
-            <FaRegAddressBook className="text-3xl font-semibold text-white text-center my-auto" />
+            <TbAddressBook className="text-6xl sm:text-5xl font-semibold text-white text-center my-auto" />
             <small className="text-gray-100 text-lg sm:text-xl ml-4">Celeste Slater
               606-3727 Ullamcorper. Street
               Roseville NH 11523</small>
           </div>
           <div className="flex flex-row mt-4">
-            <MdHttp className="text-3xl font-semibold text-white text-center my-auto" />
+            <CgWebsite className="text-3xl font-semibold text-white text-center my-auto" />
             <small className="text-gray-100 text-lg sm:text-xl ml-4">www.xyzcompany.com</small>
           </div>
           <div className="mt-7">
