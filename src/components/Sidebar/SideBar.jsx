@@ -16,7 +16,8 @@ const SideBar = () => {
     { title: "Documents", src: "Chat" },
     { title: "Pending work", src: "User", gap: true },
     { title: "Completed work", src: "Calendar" },
-    { title: "Log Out", src: "Setting" },
+    { title: "Generate Quotation", src: "Calendar"},
+    { title: "Log Out", src: "Setting", gap:true  },
   ];
   return (
       <div

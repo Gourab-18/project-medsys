@@ -9,7 +9,7 @@ function Dashboard() {
         <div className="flex">
             <SideBar />
             <div className="w-5/6 mx-auto">
-                <CompletedWork/>
+                <Profile/>
             </div>
         </div>
 
