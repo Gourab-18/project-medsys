@@ -10,30 +10,24 @@ function EditProfile() {
       <h2 className="text-4xl sm:text-5xl font-semibold text-gray-800 text-center p-3">
         Edit Profile{" "}
       </h2>
-      <form className="w-11/12 md:w-2/3 lg:w-1/2 mx-auto bg-gray-100 p-5 px-8 rounded-lg">
+      <form className="w-11/12 md:w-3/4 lg:w-1/2 mx-auto bg-gray-100 px-4 py-5 rounded-md">
         
         <div className="flex flex-col text-gray-600 py-1">
           <label>Mobile Number</label>
           <input
-            className="rounded-md bg-gray-200 mt-2 p-1 focus:bg-white focus:outline-none w-4/5 sm:w-1/2"
-            // type="text" name="country_code" title="Error Message" pattern="[1-9]{1}[0-9]{9}"
+            className="rounded-sm bg-gray-200 mt-2 p-1 focus:bg-white focus:outline-none w-4/5 sm:w-1/2"
             name="mobile"  id="mobile" type="number" required />
         </div>
 
         <div className="flex flex-col text-gray-600 py-1">
-          <label>Company/Trust/NGO Name</label>
+          <label className="text-lg">Company/Trust/NGO Name</label>
           <input
-            className="rounded-lg bg-gray-200 mt-2 p-2 focus:border-yellow-300 focus:bg-white focus:outline-none w-4/5 sm:w-2/3"
-            type="name"
+            className="rounded-sm bg-gray-200 mt-2 p-1 focus:border-yellow-300 focus:bg-white focus:outline-none w-4/5 sm:w-2/3 text-sm"
+            type="text"
           />
         </div>
 
         <div className="flex flex-col text-gray-600 py-1">
-          {/* <label>Types of Incorporation</label>
-          <input
-            className="rounded-lg bg-gray-200 mt-2 p-2 focus:border-yellow-300 focus:bg-white focus:outline-none"
-            type="number"
-          /> */}
 
           <label>Types of Incorporation</label>
           <select id="incorporation" className="rounded-lg bg-gray-200 mt-2 p-2 focus:border-yellow-300 focus:bg-white focus:outline-none w-4/5 sm:w-2/3" value={incorporation} 
@@ -189,7 +183,9 @@ function EditProfile() {
             pattern="https://.*" 
           />
         </div>
-        <button className='w-1/2 sm:w-1/3 my-5 py-2 bg-yellow-500 text-gray-800 font-semibold rounded-md hover:bg-yellow-400'>Submit</button>
+      <div className="mt-7">
+      <button className='w-3/4 sm:w-1/2 py-2 bg-violet-400 text-violet-900 font-semibold rounded-md hover:bg-violet-300'>Submit</button>
+      </div>
       </form>
     </div>
   );
