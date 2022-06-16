@@ -1,13 +1,6 @@
 import { useState } from "react";
 import control from '../../assets/control.png';
 import logo from '../../assets/logo.png';
-import Setting from '../../assets/Setting.png';
-import Profile from "../../pages/Profile";
-import CompletedWork from "../../pages/CompletedWork"
-import PendingWork from "../../pages/PendingWork"
-
-// import {FcSettings} from "react-icons/fc"
-
 
 const SideBar = () => {
   const [open, setOpen] = useState(false);
