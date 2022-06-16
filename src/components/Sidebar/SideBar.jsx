@@ -23,11 +23,11 @@ const SideBar = () => {
       <div
         className={` ${
           open ? "w-1/3 sm:w-72 " : "w-10 sm:w-24"
-        } bg-zinc-800 h-screen p-5  pt-8 relative duration-300`}
+        } bg-mainColor h-screen p-5  pt-8 relative duration-300`}
       >
         <img
           src={control}
-          className={`absolute cursor-pointer -right-5 top-9 w-11 sm:w-9 border-yellow-400 hover:animate-pulse opacity-100
+          className={`absolute cursor-pointer -right-5 top-9 w-11 sm:w-9 border-rose-400 hover:animate-pulse opacity-100
            border-2 rounded-full  ${!open  && "rotate-180"}`}
           onClick={() => setOpen(!open)}
         />
