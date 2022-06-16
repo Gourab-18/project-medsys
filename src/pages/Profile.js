@@ -1,8 +1,5 @@
 import React from "react";
 import ME from "../assets/dp.png";
-import { CgProfile } from "react-icons/cg"
-import { FiMail, FiPhone } from "react-icons/fi"
-import { TbBuilding,TbAddressBook } from "react-icons/tb"
 
 const profile = () => {
   return (
