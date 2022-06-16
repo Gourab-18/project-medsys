@@ -12,18 +12,18 @@ import PendingWork from "../../pages/PendingWork"
 const SideBar = () => {
   const [open, setOpen] = useState(false);
   const Menus = [
-    { title: "Profile", src: "Chart_fill" },
-    { title: "Documents", src: "Chat" },
-    { title: "Pending work", src: "User", gap: true },
-    { title: "Completed work", src: "Calendar" },
-    { title: "Generate Quotation", src: "Calendar"},
-    { title: "Log Out", src: "Setting", gap:true  },
+    { title: "Profile", src: "account_circle" },
+    { title: "Documents", src: "description" },
+    { title: "Pending work", src: "pending_actions", gap: true },
+    { title: "Completed work", src: "assignment_turned_in" },
+    { title: "Generate Quotation", src: "request_quote"},
+    { title: "Log Out", src: "logout", gap:true  },
   ];
   return (
       <div
         className={` ${
-          open ? "w-1/3 sm:w-72 " : "w-10 sm:w-24"
-        } bg-mainColor h-screen p-5  pt-8 relative duration-300`}
+          open ? "w-1/3 sm:w-72 " : "w-10 sm:w-20"
+        } bg-mainColor h-screen p-1.5 sm:p-5  pt-11 sm:pt-7 relative duration-300`}
       >
         <img
           src={control}
@@ -31,7 +31,7 @@ const SideBar = () => {
            border-2 rounded-full  ${!open  && "rotate-180"}`}
           onClick={() => setOpen(!open)}
         />
-        <div className="items-center w-5/6 ">
+        <div className="items-center w-11/12">
           <img
             src={logo}
             className={`cursor-pointer duration-500 ${
@@ -39,7 +39,7 @@ const SideBar = () => {
             }`}
           />
           <h1
-            className={`text-white origin-left font-medium text-xl duration-200 ${
+            className={`text-rose-100 origin-left font-semibold text-xl duration-200 ${
               !open && "scale-0"
             }`}
           >
@@ -50,11 +50,14 @@ const SideBar = () => {
           {Menus.map((Menu, index) => (
             <li
               key={index}
-              className={`flex  rounded-md p-1 cursor-pointer hover:bg-gray-200 hover:text-zinc-500 text-gray-200 font-semibold text-sm items-center gap-x-4 
+              className={`flex  rounded-md p-1 cursor-pointer hover:bg-rose-100 hover:text-mainColor text-rose-100 font-semibold text-sm sm:text-md items-center gap-x-4 
               ${Menu.gap ? "mt-9" : "mt-2"} ${
                 index === 0 && "bg-light-gray-100"
               } `}
             >
+              <span class="material-symbols-rounded">
+              {Menu.src}
+              </span>
               <span className={`${!open && "hidden"} origin-left duration-200`}>
                 {Menu.title}
               </span>
